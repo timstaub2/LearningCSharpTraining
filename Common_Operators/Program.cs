@@ -6,9 +6,11 @@ namespace Common_Operators
     {
         static void Main()
         {
-            int Numirator = 10;
+            int Numorator = 10;
             int Denominator = 2;
-            int Result = Numirator / Denominator;
+
+            int Result = Numorator / Denominator;
+
             Console.WriteLine("Result = {0}", Result);
         }
     }
