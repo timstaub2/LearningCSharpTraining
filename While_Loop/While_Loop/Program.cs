@@ -1,20 +1,17 @@
 ﻿using System;
+using While_Loop;
 
 class Program
 {
     static void Main()
     {
-        Console.WriteLine("Please enter your target.");
+        Console.WriteLine("Please enter your total amount.");
 
-        int UserTarget = int.Parse(Console.ReadLine());
+        decimal enteredAmount = decimal.Parse(Console.ReadLine());
 
-        int Start = 0;
+        decimal saleTax = ComputeTax.Compute(enteredAmount);
 
-        while (Start <= UserTarget)
-        {
-            Console.Write(Start + " ");
-            Start = Start + 2;
-        }
+        Console.WriteLine("Total tax amount is " + saleTax.ToString());
 
     }
 }
