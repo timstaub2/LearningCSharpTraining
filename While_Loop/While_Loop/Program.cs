@@ -11,7 +11,7 @@ class Program
 
         decimal saleTax = ComputeTax.Compute(enteredAmount);
 
-        Console.WriteLine("Total tax amount is " + saleTax.ToString());
+        Console.WriteLine("Total tax amount is " + saleTax.ToString("C"));
 
     }
 }
